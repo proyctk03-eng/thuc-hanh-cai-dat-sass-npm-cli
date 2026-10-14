@@ -1,0 +1,25 @@
+{
+  "name": "thuc-hanh-cai-dat-sass-npm-cli",
+  "version": "1.0.0",
+  "description": "[Thực Hành] Hướng dẫn cài đặt SASS bằng npm & SASS CLI - CodeGym Lab",
+  "main": "index.html",
+  "scripts": {
+    "build:sass": "sass styles.scss styles.css",
+    "watch:sass": "sass styles.scss styles.css --watch",
+    "build:all": "sass scss/:css/",
+    "watch:all": "sass scss/:css/ --watch"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "codegym",
+    "npm",
+    "sass-cli"
+  ],
+  "author": "Nguyen Tuan Dat",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực Hành] Hướng dẫn cài đặt SASS bằng npm & SASS CLI</title>
+    <!-- Compiled CSS from styles.scss -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Compiled CSS from scss/main.scss -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Cài Đặt & Sử Dụng SASS với npm & SASS CLI</h1>
+            <p>Biên dịch SCSS sang CSS với Dart Sass CLI, chế độ --watch và quản lý thư mục</p>
+        </header>
+
+        <!-- Cards Grid biên dịch từ styles.scss -->
+        <div class="cards-grid">
+            <div class="card">
+                <h3>1. Kiểm tra Node.js & npm</h3>
+                <p>Kiểm tra môi trường runtime bằng lệnh <code>node -v</code> và <code>npm -v</code> để đảm bảo sẵn sàng cài đặt package.</p>
+            </div>
+
+            <div class="card card-secondary">
+                <h3>2. Cài đặt SASS CLI</h3>
+                <p>Cài đặt toàn cục thông qua <code>npm install -g sass</code> hoặc sử dụng <code>npx sass</code>, kiểm tra bằng <code>sass --version</code>.</p>
+            </div>
+
+            <div class="card">
+                <h3>3. Chế độ Watch Mode</h3>
+                <p>Tự động theo dõi các thay đổi và biên dịch tức thì với cờ <code>--watch</code>: <code>sass scss/:css/ --watch</code>.</p>
+            </div>
+        </div>
+
+        <!-- Khối Project Box biên dịch từ scss/main.scss -->
+        <div class="project-box" style="margin-bottom: 30px;">
+            <h2>Biên Dịch Nhiều File SCSS (scss/:css/)</h2>
+            <p>Cấu trúc SCSS dạng module hóa với <code>_variables.scss</code>, <code>_mixins.scss</code> và <code>main.scss</code> giúp mã nguồn rõ ràng, dễ bảo trì và mở rộng.</p>
+            <span class="badge-status">✓ SASS Compilation Active</span>
+        </div>
+
+        <!-- Nút bấm với Mixin button-variant -->
+        <div class="actions">
+            <button class="btn-primary" onclick="alert('Đã biên dịch SCSS sang CSS thành công!')">Xem Kết Quả Biên Dịch</button>
+            <button class="btn-secondary" onclick="alert('Chế độ --watch đang theo dõi thư mục scss/')">Kiểm Tra Chế Độ Watch</button>
+        </div>
+    </div>
+
+</body>
+</html>

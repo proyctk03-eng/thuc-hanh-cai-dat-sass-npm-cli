@@ -1,0 +1,31 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.project-box {
+    background-color: $bg-body;
+    border-radius: $radius;
+    padding: 30px;
+    border: 1px solid #e9ecef;
+    @include box-shadow-smooth;
+
+    h2 {
+        color: $brand-primary;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $text-main;
+        line-height: 1.7;
+    }
+
+    .badge-status {
+        display: inline-block;
+        padding: 5px 12px;
+        background-color: $brand-success;
+        color: #ffffff;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+}
